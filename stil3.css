@@ -1,0 +1,229 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  margin:0;
+  padding:0;
+  background-color: rgb(255, 255, 255);
+}
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #118d26;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 10;
+}
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+}
+.nav-items li {
+ padding-right:50px;
+}
+.nav-link {
+  text-decoration: none;
+  color:White;
+  font-size: 20px;
+  font-weight:;
+  font-family: 'Noto Sans', sans-serif;
+}
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+#welcome-section h1 {
+  font-size: 6rem;
+  text-align: center;
+  margin: 30px 0 0 0;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+#welcome-section p {
+  font-size: 4rem;
+  text-align: center;
+  margin: 10px 0 0 0;
+  color: #118d26;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+#projects {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #54628A;
+}
+#projects h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 30px 0 0 0;
+  color: white;
+  border-bottom: 0.2rem solid white;
+  font-family: 'Ubuntu', sans-serif;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.projects-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(45rem,1fr));
+  grid-gap: 1rem;
+}
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:flex-start;
+  width: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding:0px;
+  background-color: #118d26 ;
+  border-radius: 10px;
+  filter:drop-shadow(2px 2px 10px black)
+}
+.title-div {
+  text-align: center;
+  width: 100%;
+  background-color: #118d26;
+  border-radius: 10px;
+}
+.project-tile p {
+  background-color: ;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+}
+.project-tile a {
+  text-align:center;
+  margin: 0px;
+  text-decoration: none;
+  color:white;
+}
+.project-img {
+  margin: 0px;
+  width: 400px;
+  height: 500px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background-color: #1E1E1D;
+}
+#contact a {
+  font-size:3rem;
+  text-decoration: none;
+  font-family: Arial;
+  color: white;
+
+}
+@media only screen and (max-width: 600px) {
+  .section-div {
+    height: 30%;
+  }
+  .nav-link {
+    font-size: 10px;
+  }
+  .wel-div {
+    margin-top:20px;
+  }
+  .wel-div h1 {
+    font-size: 2em;
+  }
+  .nam-div {
+    margin-top: 20px;
+  }
+  .nam-div h2 {
+    font-size: 1.7em;
+  }
+  .ex-div h2 {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .projects-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+    grid-gap: 2rem;
+  }
+  .project-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:200px;
+    align-items: center;
+    margin-bottom: 30px;
+    padding:0px;
+    background-color: #118d26;
+    filter:drop-shadow(2px 2px 10px black)
+  }
+  .project-img {
+    margin: 0px;
+    max-width: 200px;
+    height: auto;
+  }
+  #projects h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .projects-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50rem,1fr));
+    grid-gap: 2rem;
+  }
+  .project-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:180px;
+    align-items: center;
+    margin-bottom: 30px;
+    padding:0px;
+    background-color: #118d26;
+    filter:drop-shadow(2px 2px 10px black)
+  }
+  .project-img {
+    margin: 0px;
+    max-width: 180px;
+    height: auto;
+  }
+  #projects h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .projects-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(55rem,1fr));
+    grid-gap: 2rem;
+  }
+  
+}
